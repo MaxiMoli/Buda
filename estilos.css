@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: coco;
+    src: url(./fuentes/Cocogoose\ Pro-trial.ttf);
+}
+header{
+    height: 70px;
+    width: 100%;
+    background-color: #b30505;
+    font-size: 20px;
+    font-family: coco;
+    padding: 20px;
+}
+
+.logo{
+    float: left;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px black;
+    color: rgb(+234, 198, 64);
+    font-weight: bold;
+    font-size: 30px;
+    font-family: coco;
+}
+
+.barra{
+    float: right;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    text-transform: capitalize;
+    margin-left: 70px;
+}
+
+ul a{
+    color: rgb(+234, 198, 64);
+    text-decoration: none;
+}
+
+ul a:hover{
+    color: rgb(205, 183, 39);
+}
+
+ul a:focus{
+    box-shadow:0 0 15px 10px rgb(205, 183, 39);
+    border-radius: 20%;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./multimedia/relaxation-g11d49c312_1280.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.call{
+    width: 40%;
+    color: #b30505;
+    background-color: rgb(205, 183, 39);
+    float: right;
+    margin: 40px;
+    padding: 20px;
+    border: 3px solid #b30505; 
+}
+
+h1{
+    font-family: coco;
+    margin-bottom: 20px;
+}
+
+.call{
+    margin-bottom: 20px;
+}
+
+.call p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    margin-bottom: 20px;
+}
+
+.call a{
+    background-color: #b30505;
+    color:rgb(205, 183, 39);
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.call a:hover{
+    background-color: #b3050590;
+}
+
+h2{
+    text-align: center;
+    background-color: rgb(205, 183, 39);
+    text-transform: uppercase;
+    font-family: coco;
+    padding: 20px
+}
+section.cont{
+    height: 500px;
+    width: 100%;
+    background-image: url(./multimedia/zen-g2beed365b_1280.jpg);
+    background-size:cover;
+}
+
+footer{
+    text-align: center;
+    background-color: #b30505;
+    color: rgb(255,255,255);
+    padding:20px;
+}
+
+.redes{
+    color: rgb(205, 183, 39);
+    font-size: 30px;
+    letter-spacing: 20px;
+}
+
+.redes a{
+    color: rgb(205, 183, 39);
+}
+
+.subir{
+    height: 60px;
+    width: 60px;
+    background-color: #67ce3f;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    color: aliceblue;
+    text-align: center;
+    line-height: 40px; ;
+    font-size: 40px;
+    border-radius: 50%;
+    padding: 3px;
+}
+#wppLogo{
+    vertical-align: middle;
+}
+
+.back1{
+    width: 40%;
+    color: #b30505;
+    background-color: rgb(205, 183, 39);
+    float: right; 
+}
+
+.back1{
+    display: inline-block;
+    margin-right: 80px;
+    margin-top: 60px;
+    border-radius: 50%;
+}
+.cont{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+
+.iniciaSesion{
+    border: 5px solid rgb(205, 183, 39);
+    display: flexbox;
+    float: right;
+    margin: 30px;
+    padding: 20px 50px 20px 50px ;
+}
+
+.submit{
+    display:block;
+    display: flex;
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
