@@ -112,11 +112,10 @@ h2{
     padding: 20px
 }
 section.cont{
-    height: 500px;
+    height: 100%;
     width: 100%;
-    background-image: url(./multimedia/zen-g2beed365b_1280.jpg);
-    background-size:cover;
-}
+    background-size:cover;     
+    }
 
 footer{
     text-align: center;
@@ -126,14 +125,12 @@ footer{
 }
 
 .redes{
-    color: rgb(205, 183, 39);
     font-size: 30px;
-    letter-spacing: 20px;
+    color: rgb(205, 183, 39);
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
-.redes a{
-    color: rgb(205, 183, 39);
-}
 
 .subir{
     height: 60px;
@@ -166,27 +163,68 @@ footer{
     margin-top: 60px;
     border-radius: 50%;
 }
-.cont{
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-end;
+.card-text{
+    color: #b30505;
+}
+.card-body{
+    color: black;
 }
 
-.iniciaSesion{
-    border: 5px solid rgb(205, 183, 39);
-    display: flexbox;
-    float: right;
-    margin: 30px;
-    padding: 20px 50px 20px 50px ;
+
+
+#grilla{
+    background-color: rgb(205, 183, 39);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 450px;
+    grid-template-areas: 
+        "foto1 foto2 foto3"
+        "foto1 foto2 foto3"
+        "foto1 foto2 foto3";
+        grid-gap: 20px;
+        background-size: cover;
+}
+.fotos{
+    border: 6px solid rgb(205, 183, 39);
+    border-radius: 10px;
+}
+
+.foto1 {
+    grid-area: foto1;
+    background-image: url(./multimedia/IMG_7202.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.foto2{
+    grid-area: foto2;
+    background-image: url(./multimedia/IMG_6824\ \(1\).jpg);
+    background-size: cover;
+}
+
+.foto3{
+    grid-area: foto3;
+    background-image: url(./multimedia/IMG_7209.jpg);
+    background-size: cover;
+}
+#sec1{
+    margin: 0%;
+    color: #b30505;
+    font-style:oblique
+}
+#cont1{
+    margin: 0;
+}
+.jumbotron{
+    background-color: rgb(205, 183, 39);
+}
+.btn-primary{
     background-color: #b30505;
-    color: rgb(205, 183, 39);
 }
 
 
-.submit{
-    display:block;
-    display: flex;
-    margin: 20px;
-    margin-bottom: 0px;
-}
+
+
+
+
+
 
