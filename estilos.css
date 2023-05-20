@@ -211,5 +211,199 @@ html {
     margin: 15px;
   }
 }
+@media (max-width: 1301px) and (max-height: 353px) {
+  header {
+    height: 70px;
+    width: 100%;
+    background-color: #b30505;
+    font-size: 20px;
+    font-family: coco;
+    padding: 20px;
+  }
+  .logo {
+    float: left;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px black;
+    color: rgb(234, 198, 64);
+    font-weight: bold;
+    font-size: 30px;
+    font-family: coco;
+  }
+  .barra {
+    float: center;
+    flex-direction: column;
+    height: 130px;
+    justify-content: space-evenly;
+  }
+  ul {
+    list-style: none;
+  }
+  ul li {
+    display: inline-block;
+    text-transform: capitalize;
+    margin-left: 70px;
+  }
+  ul a {
+    color: rgb(234, 198, 64);
+    text-decoration: none;
+  }
+  ul a:hover {
+    color: rgb(205, 183, 39);
+  }
+  ul a:focus {
+    box-shadow: 0 0 15px 10px rgb(205, 183, 39);
+    border-radius: 20%;
+  }
+  main {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./multimedia/relaxation-g11d49c312_1280.jpg);
+    background-size: cover;
+    background-position: left;
+  }
+  .call {
+    width: 40%;
+    color: #b30505;
+    background-color: rgb(205, 183, 39);
+    float: right;
+    margin: 40px;
+    padding: 20px;
+    border: 3px solid #b30505;
+  }
+  h1 {
+    font-family: coco;
+    margin-bottom: 20px;
+  }
+  .call {
+    margin-bottom: 20px;
+  }
+  .call p {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+  }
+  .call a {
+    background-color: #b30505;
+    color: rgb(205, 183, 39);
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+  }
+  .call a:hover {
+    background-color: rgba(179, 5, 5, 0.5647058824);
+  }
+  h2 {
+    text-align: center;
+    background-color: rgb(205, 183, 39);
+    text-transform: uppercase;
+    font-family: coco;
+    padding: 20px;
+  }
+  section.cont {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+  }
+  .footer {
+    text-align: center;
+    background-color: #b30505;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+  }
+  .redes {
+    font-size: 30px;
+    color: rgb(205, 183, 39);
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .subir {
+    height: 60px;
+    width: 60px;
+    background-color: #67ce3f;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    color: aliceblue;
+    text-align: center;
+    line-height: 40px;
+    font-size: 40px;
+    border-radius: 50%;
+    padding: 3px;
+  }
+  #wppLogo {
+    vertical-align: middle;
+  }
+  .back1 {
+    width: 40%;
+    color: #b30505;
+    background-color: rgb(205, 183, 39);
+    float: right;
+  }
+  .back1 {
+    display: inline-block;
+    margin-right: 80px;
+    margin-top: 60px;
+    border-radius: 50%;
+  }
+  .card-text {
+    color: #b30505;
+  }
+  .card-body {
+    color: black;
+  }
+  #grilla {
+    background-color: rgb(205, 183, 39);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 450px;
+    grid-template-areas: "foto1 foto2 foto3" "foto1 foto2 foto3" "foto1 foto2 foto3";
+    grid-gap: 20px;
+    background-size: cover;
+    padding-bottom: 15px;
+  }
+  .fotos {
+    border: 6px solid rgb(205, 183, 39);
+    border-radius: 15px;
+  }
+  .foto1 {
+    grid-area: foto1;
+    background-image: url(./multimedia/IMG_7202.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .foto2 {
+    grid-area: foto2;
+    background-image: url(./multimedia/IMG_6824\ \(1\).jpg);
+    background-size: cover;
+  }
+  .foto3 {
+    grid-area: foto3;
+    background-image: url(./multimedia/IMG_7209.jpg);
+    background-size: cover;
+  }
+  #sec1 {
+    margin: 0%;
+    color: #b30505;
+    font-style: oblique;
+  }
+  #cont1 {
+    margin: 0;
+  }
+  .jumbotron {
+    background-color: rgb(205, 183, 39);
+  }
+  .btn-primary {
+    background-color: #b30505;
+  }
+  .mapa {
+    display: grid;
+    justify-items: center;
+    background-color: rgb(205, 183, 39);
+    padding-bottom: 60px;
+  }
+  .mapau {
+    border-radius: 18px;
+    border: 6px solid #b30505;
+  }
+}
 
 /*# sourceMappingURL=estilos.css.map */
