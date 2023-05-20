@@ -443,6 +443,9 @@ section.sec1 {
   }
 }
 @media (max-width: 800px) {
+  body {
+    display: inline-block;
+  }
   header {
     height: 70px;
     width: 100%;
@@ -587,7 +590,7 @@ section.sec1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 450px;
-    grid-template-areas: "foto1 foto2 " "foto1 foto2 " "foto3 foto3 ";
+    grid-template-areas: "foto1 foto2 foto3" "foto1 foto2 foto3" "foto1 foto2 foto3";
     grid-gap: 20px;
     background-size: cover;
     padding-bottom: 15px;
