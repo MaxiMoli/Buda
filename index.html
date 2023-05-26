@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,30 +16,24 @@
 
 <body>
     <header>
-        <!-- Cambiar color budita -->
         <aside class="logo"><a href="./index.html"><span><a href="./index.html"><b>Budita</b></a></span></aside>
         <!-- barra de navegación va en todas las paginas, recordar cambiar al link del href  -->
         <nav class="barra">
             <ul>
                 <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
                 <li><a href="./linkbarras/servicios.html"><i class="fa-solid fa-bell-concierge"></i></a></li>
-                <li><a href="./linkbarras/contacto.html"><i class="fa-solid fa-user"></i></a></li>
-                <li><a href="./linkbarras/sobremi.html"><i class="fa-solid fa-address-card"></i></a></li>
                 <li><a href="./linkbarras/agenda.html"><i class="fa-regular fa-calendar"></i></a></li>
                 <li><a href="./linkbarras/productos.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     </header>
     <main>
-        <div class="call">
+        <div data-aos="fade-up" class="call">
             <div class="jumbotron">
                 <h1 class="display-4">Masajes relajantes</h1>
                 <p class="lead">parrafo con informacion sobre los masajes relajantes</p> 
                 <hr class="my-4">
-                <p>parrafo con explicacion del boton agenda</p> 
+                <p>Presione el siguiente boton par agendarse</p> 
                 <a class="btn btn-primary btn-lg" href="./linkbarras/agenda.html" role="button">Agenda</a>
             </div>
         </div>
@@ -55,7 +50,7 @@
             <section class="mapau"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13092.769567639616!2d-56.13845069999999!3d-34.87651484999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80e917417551%3A0x7ebfd9bbde87462!2sUni%C3%B3n%2C%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses!2suy!4v1683773406523!5m2!1ses!2suy" width="600" height="450" style="border-radius: 18px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></section>
         </div>
     </section>
-<!-- footer cambiar todo: agregar - colores a las redes sociales - titulo creativo -->
+
     <footer class="footer">
         <div class="card text-center">
             <div class="card-body">
@@ -75,6 +70,10 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

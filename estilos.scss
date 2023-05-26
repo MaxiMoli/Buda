@@ -6,7 +6,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
 }
 
 @font-face {
@@ -14,54 +14,64 @@ html {
     src: url(./fuentes/Cocogoose\ Pro-trial.ttf);
 }
 
-    header {
-        height: 70px;
-        width: 100%;
-        background-color: #b30505;
-        font-size: 20px;
-        font-family: coco;
-        padding: 20px;
-    }
 
-    .logo {
-        float: left;
-        text-transform: uppercase;
-        text-shadow: 0 0 5px black;
-        color: rgb(+234, 198, 64);
-        font-weight: bold;
-        font-size: 30px;
-        font-family: coco;
-    }
+header {
+    height: 60px;
+    width: 100%;
+    background-color: #b30505;
+    font-size: 20px;
+    font-family: coco;
+    padding: 10px;
+    position: fixed;
+}
 
-    .barra {
-        float: right;
-    }
+.logo {
+    float: left;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px black;
+    color: rgb(+234, 198, 64);
+    font-weight: bold;
+    font-size: 30px;
+    font-family: coco;
+}
 
-    ul {
-        list-style: none;
-    }
+.logo a{
+    text-decoration: none;
+    color: unset;
+}
 
-    ul li {
-        display: inline-block;
-        text-transform: capitalize;
-        margin-left: 70px;
-    }
+.barra {
+    float: right;
+    display: inline;
+    margin-right: 60px;
+}
 
-    ul a {
-        color: rgb(+234, 198, 64);
-        text-decoration: none;
-    }
+ul {
+    list-style: none;
+}
 
-    ul a:hover {
-        color: rgb(205, 183, 39);
-    }
+ul li {
+    display: inline-block;
 
-    ul a:focus {
-        box-shadow: 0 0 15px 10px rgb(205, 183, 39);
-        border-radius: 20%;
-    }
+    text-transform: capitalize;
+    margin-right: 70px;
+}
 
-    main {
+ul a {
+    color: rgb(+234, 198, 64);
+    text-decoration: none;
+}
+
+ul a:hover {
+    color: rgb(205, 183, 39);
+}
+
+ul a:focus {
+    box-shadow: 0 0 15px 10px rgb(205, 183, 39);
+    border-radius: 20%;
+}
+    
+main {
         height: 100vh;
         width: 100%;
         background-image: url(./multimedia/relaxation-g11d49c312_1280.jpg);
@@ -78,10 +88,10 @@ html {
         padding: 20px;
         border: 3px solid #b30505;
         text-transform: uppercase;
+        margin-top: 80px;
     }
 
     h1.display-4 {
-        font-family: coco;
         margin-bottom: 20px;
 
     }
@@ -109,9 +119,8 @@ html {
 
     h2 {
         text-align: center;
-        background-color: rgb(205, 183, 39);
+        background: linear-gradient(90deg, rgba(205,183,39,1) 55%, rgba(179,5,5,1) 100%);
         text-transform: uppercase;
-        font-family: coco;
         padding: 20px
     }
 
@@ -121,11 +130,6 @@ html {
         background-size: cover;
     }
 
-    footer {
-        background-color:#b30505;
-        color: rgb(255, 255, 255);
-        padding: 20px;
-    }
 
     .redes {
         font-size: 30px;
@@ -134,10 +138,8 @@ html {
 
     .redes a{
         text-decoration: none;
-        color: #b30505;
+        color: rgb(205, 183, 39);
     }
-    
-
 
     .subir {
         height: 60px;
@@ -149,7 +151,6 @@ html {
         color: aliceblue;
         text-align: center;
         line-height: 40px;
-        ;
         font-size: 40px;
         border-radius: 50%;
         padding: 3px;
@@ -174,15 +175,19 @@ html {
     }
 
     .card-text {
-        color: #b30505;
+        color: rgb(205, 183, 39);
     }
 
-    .card-body {
-        background-color: rgb(205, 183, 39);
+    .card-body{
+        background-color: rgb(104, 102, 84);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 
     #grilla {
-        background-color: rgb(205, 183, 39);
+        background: rgb(205,183,39);
+        background: linear-gradient(90deg, rgba(205,183,39,1) 55%, rgba(179,5,5,1) 100%);
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 450px;
@@ -241,20 +246,23 @@ html {
     .mapa {
         display: grid;
         justify-items: center;
-        background-color: rgb(205, 183, 39);
+        background: rgb(205,183,39);
+        background: linear-gradient(90deg, rgba(205,183,39,1) 55%, rgba(179,5,5,1) 100%);
         padding-bottom: 60px;
     }
-
-    .mapau {
-        border-radius: 18px;
-        border: 6px solid #b30505;
-    }
+    
     h1.display-4{
         font-size:xx-large ;
     }
-p.card-text{
+    
+    footer{
+        background-color: rgb(104, 102, 84);
+        position: relative;
+        bottom: 0;
+        width: 100%; 
+    } 
 
-}
+
 
 
 
@@ -570,7 +578,7 @@ p.card-text{
         width: 100%;
         background-image: url(./multimedia/relaxation-g11d49c312_1280.jpg);
         background-size: cover;
-        background-position: left;
+        background-position: center;
     }
     
     .jumbotron{
@@ -644,23 +652,31 @@ p.card-text{
 
 
     .subir {
-        height: 60px;
-        width: 60px;
+        height: 80px;
+        width: 80px;
         background-color: #67ce3f;
+        position: fixed;
+        right: 40px;
+        bottom: 40px;
+        color: aliceblue;
+        line-height: 40px;
+        font-size: 60px;
+        border-radius: 50%;
+        padding: 9px;
+    }
+    .subir :hover {        
+        height: 80px;
+        width: 80px;
+        background-color: #52f710e5;
         position: fixed;
         right: 40px;
         bottom: 40px;
         color: aliceblue;
         text-align: center;
         line-height: 40px;
-        ;
-        font-size: 40px;
+        font-size: 60px;
         border-radius: 50%;
-        padding: 3px;
-    }
-
-    #wppLogo {
-        vertical-align: middle;
+        padding: 9px;
     }
 
     .back1 {
@@ -668,14 +684,12 @@ p.card-text{
         color: #b30505;
         background-color: rgb(205, 183, 39);
         float: right;
-    }
-
-    .back1 {
         display: inline-block;
         margin-right: 80px;
         margin-top: 60px;
         border-radius: 50%;
     }
+
 
     .card-text {
         color: #b30505;
