@@ -24,6 +24,9 @@ header {
     padding: 10px;
     position: fixed;
 }
+header.servicios{
+    position: relative;
+}
 
 .logo {
     float: left;
@@ -258,9 +261,24 @@ main {
     footer{
         background-color: rgb(104, 102, 84);
         position: relative;
-        bottom: 0;
+        bottom: 10;
         width: 100%; 
     } 
+    .serv{  
+        height: 500px;
+        width: 100%;
+    }
+    .serv1{
+        background-image: url(./multimedia/DOODLE-pattern-spa-HQ.jpg);
+    }
+    .serv2{
+    }
+    .contenedor{
+        display: inline;
+    }
+    .kine{
+        margin: 0;
+    }
 
 
 
