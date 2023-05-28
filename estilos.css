@@ -187,10 +187,6 @@ section.cont {
   width: 100%;
 }
 
-div.agenda {
-  margin-bottom: 0px;
-}
-
 #grilla {
   background: rgb(205, 183, 39);
   background: linear-gradient(90deg, rgb(205, 183, 39) 55%, rgb(179, 5, 5) 100%);
@@ -281,38 +277,69 @@ footer {
   margin: 0;
 }
 
-main.productos {
+.container-item {
   background-image: url(./multimedia/buddhism-g4469aedbe_1280.jpg);
-  background-position: bottom;
   background-size: cover;
-  width: auto;
-}
-
-div.productos {
-  padding-top: 200px;
   display: grid;
-  padding: 10px;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 60px;
+  padding-bottom: 150px;
 }
 
-div.pro {
-  border: 3px solid rgb(205, 183, 39);
+.item {
+  border-radius: 10px;
+}
+
+.item:hover {
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.item:hover img {
+  transform: scale(1.2);
+}
+
+img {
+  width: 100%;
   height: 300px;
 }
 
-div.pro4 {
-  background-image: url(./multimedia/pesa.jpg);
-  background-size: cover;
+figure {
+  margin-bottom: 0%;
 }
 
-div.pro3 {
-  background-image: url(./multimedia/rolo.jpg);
-  background-size: cover;
+.item figure {
+  overflow: hidden;
 }
 
-div.pro5 {
-  background-image: url(./multimedia/banditas.jpeg);
-  background-size: cover;
+.info-product {
+  background-color: rgb(255, 255, 255);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 30px;
+  gap: 10px;
+}
+
+.item img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.info-product button {
+  border: none;
+  background: none;
+  background-color: #b30505;
+  color: rgb(205, 183, 39);
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 @media (max-width: 1301px) and (max-height: 353px) {
